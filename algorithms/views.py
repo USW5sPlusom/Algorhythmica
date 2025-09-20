@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def algo(request):
+    return render(request, "algorithms/start1.html")
