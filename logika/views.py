@@ -1,3 +1,8 @@
 from django.shortcuts import render
 
-# Create your views here.
+from .models import Bead
+
+def home(request):
+    beads = Bead.objects.all()
+    return render(request, 'logika/start1.html', {'beads':beads})
+
